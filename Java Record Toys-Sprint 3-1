@@ -1,0 +1,20 @@
+import java.util.*;
+public class Source{
+    public static String[] getToys(String[] toys){
+        Arrays.sort(toys);
+        return toys;
+    }
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String[] toys=new String[5];
+        if (sc.hasNextInt()){
+            for(int i=0;i<5;i++){
+                toys[i]=sc.nextLine();
+            }
+            toys=getToys(toys);
+            for(int i=0;i<5;i++){
+                System.out.println(toys[i]);
+            }
+        }
+    }
+}
